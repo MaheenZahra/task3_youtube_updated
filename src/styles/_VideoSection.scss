@@ -1,0 +1,55 @@
+.pictures{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.completeSec{
+  margin-top: 44px;
+  width: 320px;
+  height: 330px;
+  background-color: rgb(245, 243, 243); 
+}
+.thumbnail{
+ display: flex;
+ justify-content: flex-start;
+ 
+}
+
+.imagePart{
+  height:190px;
+  width:320px;
+}
+
+.vidLogo{
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  float: left;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+.Descr{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 3px;
+}
+.vidText{
+  margin-left: 6px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.channelName{
+  font-size: 1rem;
+  margin-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  
+}
+.views{
+  @extend .channelName;
+  margin-top: 2px;
+  
+}

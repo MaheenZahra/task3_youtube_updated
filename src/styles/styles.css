@@ -1,0 +1,226 @@
+* {
+  margin: 0; }
+
+.HeaderSection {
+  height: 4rem;
+  width: 100%; }
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 1.5rem;
+  background-color: #fdfbfb; }
+
+.leftHeader {
+  display: flex;
+  flex-direction: row; }
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: #fdfbfb;
+  background-color: white;
+  margin: 0 12px;
+  height: 1.5rem;
+  cursor: pointer;
+  outline: none; }
+
+.YouTube-react {
+  color: red;
+  font-size: 2rem;
+  background-color: #fdfbfb;
+  height: 1.5rem;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 0.2rem; }
+
+.YoutubeText {
+  font-size: 1rem;
+  background-color: #fdfbfb;
+  height: 2rem;
+  margin-top: 7px; }
+
+.Search-area {
+  display: flex;
+  align-items: center;
+  border: 1px gray;
+  height: 2rem; }
+
+.search-bar {
+  width: 600px;
+  height: 2.3rem;
+  border: none;
+  padding: 0 10px;
+  border: 1.5px solid lightgray; }
+
+input::placeholder {
+  color: gray; }
+
+hr {
+  width: 10%; }
+
+.search-icon {
+  font-size: 1.5rem;
+  background-color: #fdfbfb;
+  color: #444343;
+  height: 2.3rem;
+  margin-right: 12px;
+  cursor: pointer;
+  color: gray;
+  background-color: #eceaea;
+  width: 4rem; }
+
+.Mic-icon {
+  font-size: 1.5rem;
+  background-color: #fdfbfb;
+  color: #444343;
+  height: 2.3rem;
+  margin-right: 12px;
+  cursor: pointer; }
+
+.rightHeader {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+  margin-right: 24px; }
+
+.icons {
+  padding: 0 12px;
+  font-size: 1.5rem;
+  background-color: #fdfbfb;
+  color: #444343;
+  margin-right: 17px;
+  cursor: pointer; }
+
+.icon {
+  margin-right: 20px; }
+
+.user_profile_pic {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer; }
+
+.menu {
+  display: flex;
+  margin-top: 15px; }
+
+.SuggestionsButton {
+  width: 6rem;
+  background-color: #f0eeee;
+  border: 0.1px solid lightgray;
+  height: 32px;
+  min-width: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  position: relative; }
+
+.SuggestionsButton:hover {
+  background-color: lightgray; }
+
+.buttonText {
+  font-size: 0.8rem;
+  color: #535353;
+  font-family: Arial, Helvetica, sans-serif; }
+
+@media only screen and (max-device-width: 768px) {
+  .menu {
+    display: none; }
+  .SuggestionsButton {
+    display: none; } }
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.completeSec {
+  margin-top: 44px;
+  width: 320px;
+  height: 330px;
+  background-color: #f5f3f3; }
+
+.thumbnail {
+  display: flex;
+  justify-content: flex-start; }
+
+.imagePart {
+  height: 190px;
+  width: 320px; }
+
+.vidLogo {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  float: left;
+  margin-top: 9px;
+  margin-left: 9px; }
+
+.Descr {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 3px; }
+
+.vidText {
+  margin-left: 6px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.channelName, .views {
+  font-size: 1rem;
+  margin-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray; }
+
+.views {
+  margin-top: 2px; }
+
+.MainSection {
+  display: flex;
+  justify-content: space-between; }
+
+.leftPanel {
+  display: grid;
+  width: 17%;
+  height: 2rem; }
+
+.IconHome {
+  color: red; }
+
+.Home, .Explore, .Subscribtions, .Library, .Playlist, .History, .WatchLater, .Likes, .showMore {
+  display: flex;
+  margin-left: 26px;
+  margin-top: 30px;
+  padding-top: 5px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444343;
+  cursor: pointer; }
+
+.h {
+  background-color: lightgray;
+  height: 50px; }
+
+.Home h6, .Explore h6, .Subscribtions h6, .Library h6, .Playlist h6, .History h6, .WatchLater h6, .Likes h6, .showMore h6 {
+  margin-left: 20px; }
+
+/*Pictures Container*/
+.picsContainer {
+  width: 83%;
+  height: 60rem; }
+
+@media only screen and (max-device-width: 320px) {
+  .leftPanel {
+    display: none; } }

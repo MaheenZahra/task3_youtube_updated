@@ -1,0 +1,71 @@
+@import 'suggestionMenu';
+@import 'VideoSection';
+.MainSection{
+  display: flex; 
+  justify-content: space-between;
+}
+.leftPanel{
+  display: grid;
+  width: 17%;
+  height: 2rem;
+}
+.IconHome{
+  color:red;
+}
+
+.Home{
+  display:flex;
+  margin-left: 26px;
+  margin-top: 30px;
+  padding-top:5px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(68, 67, 67);
+  cursor: pointer;
+}
+.h{
+  background-color: lightgray;
+  height: 50px;
+}
+.Home h6{
+  margin-left: 20px;
+  
+}
+
+.Explore{
+  @extend .Home;
+}
+.Subscribtions{
+  @extend .Home;
+}
+.Library{
+  @extend .Home;
+}
+.Playlist{
+  @extend .Home;
+}
+.History{
+  @extend .Home;
+}
+.WatchLater{
+  @extend .Home;
+}
+.Likes{
+  @extend .Home;
+}
+.showMore{
+  @extend .Home;
+}
+
+/*Pictures Container*/
+.picsContainer{
+  width: 83%;
+  height:60rem;
+}
+
+@media only screen and (max-device-width: 320px) {
+.leftPanel{
+ display: none;
+}
+}

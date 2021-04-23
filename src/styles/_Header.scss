@@ -1,0 +1,127 @@
+//Create micin to reuse properties
+*{
+  margin: 0;
+  
+}
+@mixin sameFont($font_size) {
+  font-size: $font_size;
+  background-color:rgb(253, 251, 251);
+}
+$icon-color:rgb(68, 67, 67);
+//Overall Header
+
+.HeaderSection{
+  height:4rem;
+  width: 100%;
+}
+
+header{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin: 0;
+height:4rem;
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+position:fixed;
+@include sameFont(1.5rem);
+}
+
+
+//Left part of header
+
+.leftHeader{
+  display: flex;
+  flex-direction: row;
+}
+button{
+  border:none;
+  @include sameFont(1.5rem);
+  background-color:white;
+  margin: 0 12px;
+  height: 1.5rem ;
+  cursor: pointer;
+  outline: none;
+}
+.YouTube-react{
+  color: red;
+  @include sameFont(2rem);
+  height: 1.5rem ;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 0.2rem;
+  
+}
+.YoutubeText{
+  @include sameFont(1rem);
+  height: 2rem ;
+  margin-top: 7px;
+
+}
+
+
+//Center part of header
+
+.Search-area{
+  display:flex;
+  align-items: center;
+  border: 1px gray;
+  height: 2rem;
+ 
+}
+.search-bar{
+  width:600px;
+  height: 2.3rem; 
+  border:none;
+  padding:0 10px;
+  border: 1.5px solid lightgray;
+}
+input::placeholder{
+  color: gray
+}
+hr{
+ width: 10%; 
+}
+@mixin icons{
+  @include sameFont(1.5rem);
+  color:$icon-color;
+  height: 2.3rem;
+  margin-right: 12px;
+  cursor:pointer;
+}
+.search-icon{
+@include icons;
+color: gray;
+background-color: rgb(236, 234, 234);
+width: 4rem;
+}
+.Mic-icon{
+@include icons;
+}
+
+//Right part of 
+
+.rightHeader{
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+  margin-right: 24px;
+}
+.icons{
+  padding: 0 12px;
+  @include sameFont(1.5rem);
+  color: $icon-color;
+  margin-right: 17px;
+  cursor: pointer;
+}
+.icon{
+  margin-right: 20px;
+  
+}
+.user_profile_pic{
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
